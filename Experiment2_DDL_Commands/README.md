@@ -110,7 +110,8 @@ Create a table named Department with the following constraints:
 - DepartmentName as TEXT should be unique and not NULL.
 - Location as TEXT.
 
-```sql 
+```sql
+SQL CODE
 CREATE TABLE Department(
 DepartmentID INTEGER PRIMARY KEY,
 DepartmentName TEXT UNIQUE NOT NULL,
@@ -134,7 +135,7 @@ ISBN             Title                      Author           Publisher   Year
 ```
 
 ```sql
-CODE
+SQL CODE
 INSERT INTO Books (ISBN,Title,Author)
 VALUES('978-1234567890','Introduction to AI','John Doe'); 
 INSERT INTO Books (ISBN,Title,Author,Publisher,Year)
@@ -161,6 +162,7 @@ Create a new table named item with the following specifications and constraints:
 ```
 
 ```sql
+SQL CODE
 CREATE TABLE item(
 item_id TEXT PRIMARY KEY,
 item_desc TEXT NOT NULL,
@@ -178,9 +180,9 @@ ON DELETE CASCADE
 
 **Question 4**
 ---
-```
 Write a SQL query to Add a new column State as text in the Student_details table.
 Sample table: Student_details
+```
 
  cid              name             type   notnull     dflt_value  pk
 ---------------  ---------------  -----  ----------  ----------  ----------
@@ -192,6 +194,7 @@ Sample table: Student_details
 ```
 
 ```sql
+SQL CODE
 ALTER TABLE Student_details
 ADD COLUMN State TEXT;
 ```
@@ -205,6 +208,7 @@ ADD COLUMN State TEXT;
 Insert a new product with ProductID 101, Name Laptop, Category Electronics, Price 1500, and Stock 50 into the Products table.
 
 ```sql
+SQL CODE
 INSERT INTO Products(ProductID, Name, Category,Price,Stock)
 VALUES(101,'Laptop','Electronics', 1500, 50);
 
@@ -223,6 +227,7 @@ Create a table named Locations with the following columns:
 - Address as TEXT
 
 ```sql
+SQL CODE
 CREATE TABLE Locations(
 LocationID INTEGER,
 LocationName TEXT,
@@ -236,12 +241,11 @@ Address TEXT
 
 **Question 7**
 ---
-```
 Insert all customers from Old_customers into Customers
 Table attributes are CustomerID, Name, Address, Email
-```
-CP
+
 ```sql
+SQL CODE
 INSERT INTO Customers(CustomerID, Name, Address, Email)
 SELECT CustomerID, Name, Address, Email 
 FROM Old_customers;
@@ -255,16 +259,17 @@ FROM Old_customers;
 **Question 8**
 ---
 Write a SQL query to Add a new column named "discount" with the data type DECIMAL(5,2) to the "customer" table.
-
 Sample table: customer
-
+```
  customer_id |   cust_name    |    city    | grade | salesman_id 
 -------------+----------------+------------+-------+-------------
         3002 | Nick Rimando   | New York   |   100 |        5001
         3007 | Brad Davis     | New York   |   200 |        5001
         3005 | Graham Zusi    | California |   200 |        5002
+```
 
 ```sql
+SQL CODE
 ALTER TABLE customer
 ADD COLUMN discount DECIMAL(5,2);
 ```
@@ -282,6 +287,7 @@ Create a table named ProjectAssignments with the following constraints:
 - AssignmentDate as DATE should be NOT NULL.
 
 ```sql
+SQL CODE
 CREATE TABLE ProjectAssignments(
 AssignmentID INTEGER PRIMARY KEY,
 EmployeeID INTEGER,
@@ -306,6 +312,7 @@ Create a new table named contacts with the following specifications:
 - phone as TEXT and not NULL with a check constraint to ensure the length of phone is at least 10 characters.
 
 ```sql
+SQL CODE
 CREATE TABLE contacts(
 contact_id INTEGER PRIMARY KEY,
 first_name TEXT NOT NULL,
