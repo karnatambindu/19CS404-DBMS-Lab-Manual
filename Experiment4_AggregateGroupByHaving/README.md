@@ -277,4 +277,6 @@ ORDER BY jdate;
 
 
 ## RESULT
+![image](https://github.com/user-attachments/assets/3664a520-1bf7-4bfd-af41-d574c65fa297)
+
 Thus, the SQL queries to implement aggregate functions, GROUP BY, and HAVING clause have been executed successfully.
