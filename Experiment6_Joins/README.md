@@ -495,4 +495,6 @@ WHERE
 
 
 ## RESULT
+![image](https://github.com/user-attachments/assets/65d122e9-75f3-4544-81bd-6bbd628efa71)
+
 Thus, the SQL queries to implement different types of joins have been executed successfully.
