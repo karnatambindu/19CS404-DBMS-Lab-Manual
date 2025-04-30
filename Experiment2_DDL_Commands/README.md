@@ -328,4 +328,5 @@ phone TEXT NOT NULL CHECK (length(phone) >= 10)
 
 
 ## RESULT
+![image](https://github.com/user-attachments/assets/81e871f7-4b4b-4be7-b963-e4685001f2b1)
 Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
