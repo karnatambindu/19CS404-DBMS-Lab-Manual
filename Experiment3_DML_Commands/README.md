@@ -270,4 +270,6 @@ AND PAYMENT_AMT < 3000;
 ![image](https://github.com/user-attachments/assets/44ecc6fe-d922-4951-b39a-205a7078663a)
 
 ## RESULT
+![image](https://github.com/user-attachments/assets/300c3da0-9e64-4a62-9c1c-4cfb47469a2d)
+
 Thus, the SQL queries to implement DML commands have been executed successfully.
